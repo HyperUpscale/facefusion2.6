@@ -21,18 +21,25 @@ Be aware, the [installation](https://docs.facefusion.io/installation) needs tech
 *
 
 winget install -e --id Git.Git
+
 winget install -e --id Anaconda.Miniconda3 --override "/AddToPath=1"
+
 winget install -e --id Gyan.FFmpeg
+
 winget install -e --id CodecGuide.K-LiteCodecPack.Basic
 
 conda init 
+
 conda create --name facefusion python=3.10
+
 conda activate facefusion
 
 conda install cudatoolkit=11.8 cudnn=8.9.2.26 conda-forge::gputil=1.4.0
+
 conda install conda-forge::zlib-wapi
 
 git clone https://github.com/HyperUpscale/facefusion2.6.git
+
 pip install -r requirements
 
 python run.py
