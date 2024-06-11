@@ -40,7 +40,7 @@ conda install conda-forge::zlib-wapi
 
 git clone https://github.com/HyperUpscale/facefusion2.6.git
 
-pip install -r requirements
+python install.py
 
 python run.py
 
